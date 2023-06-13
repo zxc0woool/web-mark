@@ -4,7 +4,7 @@ const isDev = process.env.NODE_ENV === "development";
 
 const module = {
 
-  SERVER_IP: "192.168.0.33:8091",               // 测试服务器端地址
+  SERVER_IP: "192.168.0.16:8080",               // 测试服务器端地址
 
   SERVER_PORT: 8091,                            // 测试服务器端口号
 
@@ -20,7 +20,7 @@ const module = {
 
   IMAGE_ADDRESS: `${window.location.origin}/`,         // 正式服务器图片地址
 
-  SERVER_IMAGE_ADDRESS: '192.168.0.33:8091',    // 测试服务器图片地址   
+  SERVER_IMAGE_ADDRESS: '192.168.0.16:8080',    // 测试服务器图片地址   
 
 };
 

@@ -1,7 +1,7 @@
 import Index from "../page/index";
 import ErrorPage from "../page/error";
 
-export const itemName = "Index";  // 名称可自定义 可为项目名称
+export const itemName = "web";  // 名称可自定义 可为项目名称
 
 /**
  * 路由配置
@@ -11,7 +11,7 @@ export const itemName = "Index";  // 名称可自定义 可为项目名称
  */
 const router = [
   { path: "*", name: "404页面", element: <ErrorPage />, auth: true },
-  { path: "/", name: "首页", element: <Index />},
+  { path: "/", name: "首页", element: <Index />,  auth: true},
   { path: `${itemName}/*`, name: "首页", element: <Index /> , auth: true},
 ];  
 

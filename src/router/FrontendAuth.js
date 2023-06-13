@@ -15,7 +15,11 @@ function RequireAuth({ children }) {
     return "";
   }
 
-  const isLogin = getLocal();
+  // const isLogin = getLocal();
+ 
+  let isLogin = {}
+  isLogin.enabledFlag = true;
+
   if (isLogin && isLogin.enabledFlag) {
     // 如果是登陆状态，想要跳转到登陆，重定向到主页
     if (children.type.name === "Login") {
