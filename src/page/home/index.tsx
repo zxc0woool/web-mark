@@ -8,9 +8,9 @@ export default function Home() {
 
   useEffect(() => {
 
-     mergeRequest([getQrCode().shutManage(),getFileAddress({})]).then((res: any) => {
-      console.log(res);
-    });
+    //  mergeRequest([getQrCode().shutManage(),getFileAddress({})]).then((res: any) => {
+    //   console.log(res);
+    // });
 
 
   }, []);
